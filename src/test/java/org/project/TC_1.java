@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class TC_1 {
 
@@ -16,6 +18,8 @@ public class TC_1 {
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         driver.navigate().to(URL);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//li//a[contains(text(),'Simple')]")).click();
         String presentUrl = driver.getCurrentUrl();
         Assert.assertTrue(presentUrl.contains("simple-form-demo"), "wrong url");
@@ -31,10 +35,6 @@ public class TC_1 {
         Assert.assertEquals(expText, ap.getText(), expText + "is not matching " + ap.getText());
         Thread.sleep(5000);
         driver.quit();
-
-
-
-
 
     }
 
