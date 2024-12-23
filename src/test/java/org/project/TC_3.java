@@ -34,7 +34,7 @@ public class TC_3{
         driver.findElement(By.xpath("//input[@placeholder='Company']")).sendKeys("xyz");
         driver.findElement(By.xpath("//input[@placeholder='Website']")).sendKeys("lambda");
         Select sel = new Select(driver.findElement(By.cssSelector("[name='country']")));
-        sel.selectByVisibleText("India");
+        sel.selectByVisibleText("United States");
         driver.findElement(By.xpath("//input[@placeholder='City']")).sendKeys("LA");
         driver.findElement(By.xpath("//input[@placeholder='City']")).sendKeys("LA");
         driver.findElement(By.xpath("//input[@placeholder='Address 1']")).sendKeys("asd");
