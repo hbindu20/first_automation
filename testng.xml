@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="5">
+    <test name="Lambda Chrome test">
+        <parameter name="Browser" value="Chrome"/>
+        <parameter name="browserVersion" value="128.0"/>
+        <parameter name="platformName" value="Windows 10"/>
+        <parameter name="Name" value="Chrome Browser Test"/>
+        <classes>
+            <class name="org.project.LambdaTestForChrome"/>
+        </classes></test>
+
+
+    <test name="Lambda Edge test">
+        <parameter name="Browser" value="Edge"/>
+        <parameter name="browserVersion" value="127.0"/>
+        <parameter name="platformName" value="macOS Ventura"/>
+        <parameter name="Name" value="Edge Browser Test"/>
+        <classes>
+            <class name="org.project.LambdaTestForChrome"/>
+        </classes></test>
+
+    <test name="Lambda Firefox test">
+        <parameter name="Browser" value="Firefox"/>
+        <parameter name="browserVersion" value="130.0"/>
+        <parameter name="platformName" value="Windows 11"/>
+        <parameter name="Name" value="Firefox Browser Test"/>
+        <classes>
+            <class name="org.project.LambdaTestForChrome"/>
+        </classes></test>
+
+</suite>
+
