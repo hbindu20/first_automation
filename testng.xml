@@ -7,7 +7,7 @@
         <parameter name="platformName" value="Windows 10"/>
         <parameter name="Name" value="Chrome Browser Test"/>
         <classes>
-            <class name="org.project.LambdaTestForChrome"/>
+            <class name="org.project.LambdaTestForMultipleTestCases"/>
         </classes></test>
 
 
@@ -17,7 +17,7 @@
         <parameter name="platformName" value="macOS Ventura"/>
         <parameter name="Name" value="Edge Browser Test"/>
         <classes>
-            <class name="org.project.LambdaTestForChrome"/>
+            <class name="org.project.LambdaTestForMultipleTestCases"/>
         </classes></test>
 
     <test name="Lambda Firefox test">
@@ -26,7 +26,7 @@
         <parameter name="platformName" value="Windows 11"/>
         <parameter name="Name" value="Firefox Browser Test"/>
         <classes>
-            <class name="org.project.LambdaTestForChrome"/>
+            <class name="org.project.LambdaTestForMultipleTestCases"/>
         </classes></test>
 
 </suite>
